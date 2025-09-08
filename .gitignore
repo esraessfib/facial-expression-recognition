@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model files (large files)
+models/*.h5
+models/*.tflite
+
+# Data files (should be downloaded separately)
+data/fer2013/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and outputs
+logs/
+*.log
