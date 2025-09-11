@@ -1,10 +1,20 @@
+# The Haar Cascade file is the face detection engine that:
+
+ #  Finds faces in images/video before emotion analysis
+
+ #   Improves accuracy by focusing on relevant regions
+
+ #   Enables real-time processing for webcam applications
+
+ #   Is essential for making your emotion recognition work properly
+
 import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 
 # Load the trained model
-model = load_model('../models/model_weights.h5')
+model = load_model('../models/emotion_recognition_model_full.h5')
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
 # Initialize webcam
