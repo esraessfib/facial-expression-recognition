@@ -7,9 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
 ![GitHub issues](https://img.shields.io/github/issues/esraessfib/facial-expression-recognition)
-![GitHub stars](https://img.shields.io/github/stars/esraessfib/facial-expression-recognition)
-![GitHub forks](https://img.shields.io/github/forks/esraessfib/facial-expression-recognition)
-![GitHub last commit](https://img.shields.io/github/last-commit/esraessfib/facial-expression-recognition)
+
 
 A deep learning model that classifies facial expressions into 7 categories: angry, disgust, fear, happy, neutral, sad, and surprise.
 
