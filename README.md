@@ -37,7 +37,7 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 ### Model Accuracy
 - Training Accuracy: ~95%
 - Validation Accuracy: ~85%
-- Test Accuracy: XX%
+
 
 ### Confusion Matrix
 ![Confusion Matrix](results/confusion_matrix.png)
