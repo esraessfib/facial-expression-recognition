@@ -62,7 +62,6 @@ Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and pl
 
 
 ### Installation
->>>>>>> Stashed changes
 
 1. Clone this repository:
 ```bash
