@@ -13,7 +13,7 @@ from sklearn.metrics import confusion_matrix
 import itertools
 
 def create_model(input_shape=(48, 48, 1), num_classes=7):
-    """Create the CNN model architecture"""
+    # Create the CNN model architecture
     model = Sequential()
 
     # 1 - Convolution
@@ -64,7 +64,7 @@ def create_model(input_shape=(48, 48, 1), num_classes=7):
     return model
 
 def plot_training_history(history):
-    """Plot training and validation loss and accuracy"""
+    # Plot training and validation loss and accuracy
     plt.figure(figsize=(20, 10))
     
     plt.subplot(1, 2, 1)
@@ -85,7 +85,7 @@ def plot_training_history(history):
     plt.show()
 
 def plot_confusion_matrix(cm, classes, normalize=True, title='Confusion matrix', cmap=plt.cm.Blues):
-    """Plot confusion matrix"""
+   # Plot confusion matrix
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
     
@@ -116,7 +116,7 @@ def main():
     # Set parameters
     pic_size = 48
     batch_size = 128
-    epochs = 50
+    epochs = 10
     base_path = "../data/fer2013/"
     
     # Create data generators

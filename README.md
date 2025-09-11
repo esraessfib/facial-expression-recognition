@@ -35,6 +35,10 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 ![Training History](results/training_history.png)
 
 ### Model Accuracy
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 - Training Accuracy: ~95%
 - Validation Accuracy: ~85%
 
@@ -62,6 +66,10 @@ Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and pl
 
 
 ### Installation
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 1. Clone this repository:
 ```bash
