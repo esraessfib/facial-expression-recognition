@@ -19,12 +19,9 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 
 - **data/fer2013/** - Contains the FER2013 dataset with images organized by emotion (angry, disgust, fear, happy, neutral, sad, surprise)
 - **models/** - Stores trained model files for inference and deployment
-- **notebooks/** - For experimental code, data exploration, and analysis
 - **results/** - Contains output visualizations that demonstrate model performance
 - **src/train.py** - Main script to prepare data, build CNN architecture, train model, and save results
-- **src/predict.py** - Loads trained model and makes predictions on new images
-- **src/utils.py** - Helper functions for data processing and model evaluation
-- **src/visualize.py** - Functions to create training curves and prediction visualizations
+- **src/webcamdemo.py** -Test webcam demo
 - **requirements.txt** - Lists all Python dependencies needed to run the project
 - **README.md** - Project documentation and instructions
 - **.gitignore** - Specifies files to exclude from version control (large datasets, cache files, etc.)
@@ -35,10 +32,6 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 ![Training History](results/training_history.png)
 
 ### Model Accuracy
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 - Training Accuracy: ~95%
 - Validation Accuracy: ~85%
 
@@ -66,10 +59,6 @@ Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and pl
 
 
 ### Installation
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 1. Clone this repository:
 ```bash
