@@ -43,11 +43,7 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 ![Confusion Matrix](results/confusion_matrix.png)
 
 
-<<<<<<< Updated upstream
-## Model Architecture
-=======
 ## 🏗️ Model Architecture
->>>>>>> Stashed changes
 
 The model uses a CNN architecture with:
 - 4 convolutional layers with BatchNormalization and MaxPooling
@@ -64,11 +60,6 @@ This project uses the FER2013 dataset from Kaggle. The dataset contains:
 
 Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and place it in the `data/fer2013/` directory.
 
-<<<<<<< Updated upstream
-
-## Installation
-=======
-## 🚀 Usage
 
 ### Installation
 >>>>>>> Stashed changes
