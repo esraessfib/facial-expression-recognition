@@ -1,5 +1,16 @@
 # Facial Expression Recognition
 
+![Python](https://img.shields.io/badge/python-3.8%2B-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10%2B-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-2.10%2B-red?logo=keras)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.6%2B-blue?logo=opencv)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
+![GitHub issues](https://img.shields.io/github/issues/esraessfib/facial-expression-recognition)
+![GitHub stars](https://img.shields.io/github/stars/esraessfib/facial-expression-recognition)
+![GitHub forks](https://img.shields.io/github/forks/esraessfib/facial-expression-recognition)
+![GitHub last commit](https://img.shields.io/github/last-commit/esraessfib/facial-expression-recognition)
+
 A deep learning model that classifies facial expressions into 7 categories: angry, disgust, fear, happy, neutral, sad, and surprise.
 
 ## Dataset
@@ -34,7 +45,11 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 ![Confusion Matrix](results/confusion_matrix.png)
 
 
+<<<<<<< Updated upstream
 ## Model Architecture
+=======
+## 🏗️ Model Architecture
+>>>>>>> Stashed changes
 
 The model uses a CNN architecture with:
 - 4 convolutional layers with BatchNormalization and MaxPooling
@@ -51,8 +66,14 @@ This project uses the FER2013 dataset from Kaggle. The dataset contains:
 
 Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and place it in the `data/fer2013/` directory.
 
+<<<<<<< Updated upstream
 
 ## Installation
+=======
+## 🚀 Usage
+
+### Installation
+>>>>>>> Stashed changes
 
 1. Clone this repository:
 ```bash
