@@ -47,7 +47,9 @@ The model uses a CNN architecture with:
 - 2 fully connected layers
 - Dropout for regularization
 - Softmax output layer with 7 units (one for each emotion)
-
+  
+## limitations of your model
+  The model performs well on clear expressions such as happiness, sadness, neutrality, and surprise but has difficulty detecting fear, disgust, and anger. This is mainly due to imbalanced and noisy labels in the   FER2013 dataset. As a result, recognition accuracy is biased toward the more represented classes.
 ## 📊 Dataset
 
 This project uses the FER2013 dataset from Kaggle. The dataset contains:
