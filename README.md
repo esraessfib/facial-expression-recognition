@@ -5,8 +5,7 @@
 ![Keras](https://img.shields.io/badge/Keras-2.10%2B-red?logo=keras)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.6%2B-blue?logo=opencv)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
-![GitHub issues](https://img.shields.io/github/issues/esraessfib/facial-expression-recognition)
+
 
 
 A deep learning model that classifies facial expressions into 7 categories: angry, disgust, fear, happy, neutral, sad, and surprise.
