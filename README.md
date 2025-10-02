@@ -78,7 +78,7 @@ python3 src/webcamdemo.py
 
 #### Run the API Server
 ```bash
-python3 src/main.py
+python3 app/main.py
 ```
 Or using Docker:
 ```bash
