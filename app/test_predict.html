@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facial Expression Recognition Demo</title>
+     <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 24px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        input[type="file"] {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+         button:hover {
+            background: #0056b3;
+        }
+        h3 {
+            margin-top: 32px;
+            color: #444;
+        }
+        pre {
+            background: #f1f3f6;
+            padding: 16px;
+            border-radius: 6px;
+            font-size: 15px;
+            color: #222;
+            min-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+       <h2>Upload an image for emotion recognition</h2>
+       <form id="uploadForm" enctype="multipart/form-data">
+           <input type="file" name="file" id="fileInput" accept="image/*" required>
+           <br><br>
+           <button type="submit">Upload & Predict</button>
+       </form>
+
+      <h3>Result:</h3>
+      <pre id="result"></pre>
+    </div>
+    <script>
+        const form = document.getElementById("uploadForm");
+        const result = document.getElementById("result");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const fileInput = document.getElementById("fileInput");
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            try {
+                const response = await fetch("http://host.docker.internal:5000/predict", {
+                    method: "POST",
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                result.textContent = JSON.stringify(data, null, 2);
+            } catch (err) {
+                result.textContent = "Error: " + err.message;
+            }
+        });
+    </script>
+</body>
+</html>

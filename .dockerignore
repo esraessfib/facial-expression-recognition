@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.db
+*.log
+*.mp4
+*.jpg
+*.png
+venv/
+.env
+.git

@@ -142,7 +142,7 @@ model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy
 # Number of epochs to train the NN
 epochs = 25
 
-checkpoint = ModelCheckpoint("model_weights.h5", monitor='val_accuracy', verbose=1, 
+checkpoint = ModelCheckpoint("emotion_recognition_model_full.h5", monitor='val_accuracy', verbose=1, 
                              save_best_only=True, mode='max')
 callbacks_list = [checkpoint]
 

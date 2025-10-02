@@ -5,9 +5,6 @@
 ![Keras](https://img.shields.io/badge/Keras-2.10%2B-red?logo=keras)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.6%2B-blue?logo=opencv)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
-![GitHub issues](https://img.shields.io/github/issues/esraessfib/facial-expression-recognition)
-
 
 A deep learning model that classifies facial expressions into 7 categories: angry, disgust, fear, happy, neutral, sad, and surprise.
 
@@ -21,10 +18,14 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 - **models/** - Stores trained model files for inference and deployment
 - **results/** - Contains output visualizations that demonstrate model performance
 - **src/train.py** - Main script to prepare data, build CNN architecture, train model, and save results
-- **src/webcamdemo.py** -Test webcam demo
+- **src/webcamdemo.py** - Test webcam demo for real-time facial expression recognition
+- **app/main.py** - REST API for serving facial expression recognition predictions
+- **app/test_predict.html** -  - Simple web interface for testing facial expression predictions via the API.
+- **Dockerfile** - Containerizes the application for easy deployment
 - **requirements.txt** - Lists all Python dependencies needed to run the project
 - **README.md** - Project documentation and instructions
 - **.gitignore** - Specifies files to exclude from version control (large datasets, cache files, etc.)
+- **.dockerignore** - Specifies files and directories to exclude from Docker image builds.
 
 ## 🎯 Results
 
@@ -35,10 +36,8 @@ This project uses the FER2013 dataset from Kaggle. You need to download it separ
 - Training Accuracy: ~95%
 - Validation Accuracy: ~85%
 
-
 ### Confusion Matrix
 ![Confusion Matrix](results/confusion_matrix.png)
-
 
 ## 🏗️ Model Architecture
 
@@ -57,10 +56,38 @@ This project uses the FER2013 dataset from Kaggle. The dataset contains:
 
 Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and place it in the `data/fer2013/` directory.
 
-
 ### Installation
 
 1. Clone this repository:
 ```bash
 git clone https://github.com/your-username/facial-expression-recognition.git
 cd facial-expression-recognition
+```
+
+### Usage
+
+#### Train the Model
+```bash
+python3 src/train.py
+```
+
+#### Run Webcam Demo
+```bash
+python3 src/webcamdemo.py
+```
+
+#### Run the API Server
+```bash
+python3 src/main.py
+```
+Or using Docker:
+```bash
+docker build -t facial-expression-recognition .
+docker run -p 5000:5000 facial-expression-recognition
+```
+
+#### Requirements
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
