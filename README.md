@@ -60,7 +60,7 @@ Download it from [here](https://www.kaggle.com/datasets/msambare/fer2013) and pl
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/facial-expression-recognition.git
+git clone https://github.com/esraessfib/facial-expression-recognition.git
 cd facial-expression-recognition
 ```
 
