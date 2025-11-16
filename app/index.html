@@ -84,7 +84,7 @@
             formData.append("file", fileInput.files[0]);
 
             try {
-                const response = await fetch("http://host.docker.internal:5000/predict", {
+                const response = await fetch("/predict", {
                     method: "POST",
                     body: formData
                 });
